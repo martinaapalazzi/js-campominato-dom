@@ -16,6 +16,12 @@ buttonStart.addEventListener ("click", function (){
     //console.log(optionsDifficulty);
     //container.innerHTML='';
 
+    const randomBombs = [ ];
+    for ( let b = 1; b <= 16; b++ ) {
+        randomBombs.push(genarateRandomNumber(1, 100));
+        console.log(randomBombs);
+    }
+
 
     let grid = document.createElement('div');
     grid.classList.add('numbers-grid');
@@ -23,7 +29,7 @@ buttonStart.addEventListener ("click", function (){
     console.log(grid);
 
     
-    for ( i = 1; i <= 100 ; i++ ) {
+    for ( i = 1; i <= 100; i++ ) {
 
         const cella = document.createElement ('div');
         cella.classList.add('cell-style');
@@ -40,3 +46,15 @@ buttonStart.addEventListener ("click", function (){
     }
 
 })
+
+
+function genarateRandomNumber (min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+
+
+
+
+
+
