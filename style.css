@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0px 50px  ;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    padding: 10px;
+}
+
+.numbers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell-style {
+    width: calc((100% / 10) - 10px);
+    height: calc((100% / 10) - 10px);
+    line-height: 2em;
+    text-align: center;
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 18px; 
+}
+
+.button-start-display {
+    display: none;
+}
+
+.cella-color {
+    background-color: rgb(150, 206, 255);
+}
